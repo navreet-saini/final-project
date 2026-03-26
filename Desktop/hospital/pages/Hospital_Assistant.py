@@ -3,7 +3,7 @@ import google.generativeai as genai
 from doctor_data import doctor_info
 from ai_engine import cursor,db
 
-genai.configure(api_key="AIzaSyAYE3L4uR9X7pwLWF-cOOCrv4lRj27J8Vg")  
+genai.configure(api_key)  
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 def generate_reply(user_input):
